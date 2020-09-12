@@ -10,7 +10,7 @@ from os import path
 
 file = input("ui file name without extension >  ")
 if (path.isfile(f'{file}.ui')):
-    os.system(f'python -m PyQt5.uic.pyuic -x {file}.ui -o {file}.py')
-    print(f'\n {file}.py has been created with success!')
+    os.system(f'python -m PyQt5.uic.pyuic -x {file}.ui -o ui_{file}.py')
+    print(f'\n ui_{file}.py has been created with success!')
 else:
     print(f'\nThe {file}.ui is not present in this directory')
